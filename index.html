@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Zakaria Yahia | Cinematic & Documentary Photographer</title>
+  <meta name="description" content="Portfolio of Zakaria Yahia, a professional visual storyteller and photographer based in Egypt, specializing in street, documentary, and cinematic photography. View award-winning photos, travel series across governorates, and visual reels.">
+  <meta name="keywords" content="Zakaria Yahia, photographer Egypt, cinematic photography, documentary photographer, street photography Egypt, travel photography, professional photographer Cairo, Vivo photography competition">
+  <meta name="author" content="Zakaria Yahia">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zakaria Yahia | Cinematic & Documentary Photographer">
+  <meta property="og:description" content="Visual storyteller specializing in capturing raw human emotions and hidden narratives in Egypt. Winner of Vivo Photography Competition.">
+  <meta property="og:image" content="About Me/20240629183655_IMG_0806_١١٥٤٢٣.JPG">
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Reading progress bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Glow Spotlights (Background decoration) -->
+  <div class="bg-glow-spot"></div>
+  <div class="bg-glow-spot-2"></div>
+  <div class="mouse-spotlight" id="mouseSpotlight"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="header-navbar">
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-name">Zakaria Yahia</span>
+      <span class="nav-logo-sub">Cinematic & Documentary</span>
+    </a>
+    
+    <div class="nav-links">
+      <a href="#" class="nav-item active">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#awards" class="nav-item">Awards</a>
+      <a href="#gallery" class="nav-item">Gallery</a>
+      <a href="#grading" class="nav-item">Color Grading</a>
+      <a href="#bts" class="nav-item">BTS</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <a href="#contact" class="nav-booking-btn">Book Session</a>
+    </div>
+
+    <button class="mobile-nav-toggle" aria-label="Toggle Navigation menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <header class="hero-section">
+    <div class="hero-bg-carousel">
+      <!-- Crossfading backgrounds representing his photography categories -->
+      <div class="hero-slide active" style="background-image: url('categorys/travel/photo_2025-05-09_16-31-09.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('categorys/street/Go5kAWUWoAEFHTJ.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('categorys/events/retouch_2024062212325618.jpg');"></div>
+    </div>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <span class="hero-tag">Visual Storyteller</span>
+      <h1 class="hero-title syne-title text-gradient">Zakaria Yahia</h1>
+      <p class="hero-subtitle">Based in Egypt. Specializing in street, documentary, and cinematic photography. Capturing raw emotions and crafting frames with distinct atmospheric depth.</p>
+      <button class="hero-cta-btn" onclick="document.getElementById('gallery').scrollIntoView();">Explore Work</button>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <!-- Floating Bokeh Elements for 3D depth parallax -->
+    <div class="hero-bokeh bokeh-1"></div>
+    <div class="hero-bokeh bokeh-2"></div>
+    <div class="hero-bokeh bokeh-3"></div>
+  </header>
+
+  <!-- ==========================================================================
+       ABOUT & STATS SECTION
+       ========================================================================== */ -->
+  <section id="about" class="about-section section-padding">
+    <div class="about-grid">
+      
+      <div class="about-content-left">
+        <div class="section-header">
+          <span class="section-subtitle">The Photographer</span>
+          <h2 class="section-title serif-title reveal-text">Behind the Lens</h2>
+        </div>
+        
+        <div class="lang-switch">
+          <button class="lang-btn active" id="btnEng">English</button>
+          <button class="lang-btn" id="btnAr">العربية</button>
+        </div>
+
+        <!-- Bio text switches between English and Arabic dynamically -->
+        <div class="about-bio">
+          <div id="bioEngText">
+            <p class="about-intro-txt">"Every frame is a standalone story, driven by a passion for visual arts and precise color grading."</p>
+            <p>I am a visual storyteller and photographer based in Egypt, specializing in street, documentary, and cinematic photography. My work focuses on capturing raw human emotions, uncovering the hidden narratives within everyday life, and framing moments with a distinct cinematic atmosphere.</p>
+            <p>Driven by a passion for visual arts and precise color grading, I view every frame as a standalone story. My dedication to the craft has been recognized through multiple accolades, including 2nd place in the Vivo Photography Competition and 3rd place across Egyptian universities.</p>
+            <p>Whether documenting a fleeting moment on the street or collaborating on a creative project, I bring a unique vision that blends authenticity with cinematic depth. Let’s bring stories to life.</p>
+          </div>
+          <div id="bioArText" class="about-arabic-text">
+            <p class="about-intro-txt">"كل كادر هو قصة قائمة بذاتها، مدفوعة بشغف عميق بالفنون البصرية وتدرج الألوان الدقيق."</p>
+            <p>أنا صانع محتوى بصري ومصور فوتوغرافي مقيم في مصر، متخصص في تصوير الشارع والوثائقي والسينمائي. يركز عملي على التقاط المشاعر الإنسانية الخام، وكشف الحكايات الخفية في تفاصيل الحياة اليومية، وتأطير اللحظات بأجواء سينمائية مميزة.</p>
+            <p>مدفوعًا بشغف بالفنون البصرية وتدريج الألوان الدقيق، أرى كل كادر كقصة مستقلة بذاتها. تم تقدير تفانيّ في هذا الفن من خلال العديد من الجوائز، بما في ذلك المركز الثاني في مسابقة Vivo للتصوير الفوتوغرافي والمركز الثالث على مستوى الجامعات المصرية.</p>
+            <p>سواء كنت أوثق لحظة عابرة في الشارع أو أتعاون في مشروع إبداعي، فإنني أقدم رؤية فريدة تمزج بين الأصالة والعمق السينمائي. لنصنع قصصًا تنبض بالحياة.</p>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-container">
+          <div class="stat-card">
+            <span class="stat-number">2nd</span>
+            <span class="stat-label">Vivo Comp.</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3rd</span>
+            <span class="stat-label">Universities</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Stories</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photographer Portrait with Glow Frame and 3D Tilt -->
+      <div class="about-portrait-wrapper">
+        <div class="portrait-glow-frame">
+          <div class="portrait-image-container">
+            <img src="About Me/20240629183655_IMG_0806_١١٥٤٢٣.JPG" alt="Zakaria Yahia Portrait">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AWARDS TIMELINE SECTION
+       ========================================================================== -->
+  <section id="awards" class="awards-section section-padding" style="background-color: var(--bg-secondary);">
+    <div class="section-header" style="text-align: center;">
+      <span class="section-subtitle">Accolades</span>
+      <h2 class="section-title serif-title reveal-text">Honors & Recognition</h2>
+    </div>
+
+    <div class="awards-timeline">
+      
+      <!-- Award 1 -->
+      <div class="timeline-item">
+        <div class="timeline-badge">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-title">2nd Place Winner</h3>
+            <span class="timeline-year">2024</span>
+          </div>
+          <span class="timeline-org">Vivo Mobile Photography Competition</span>
+          <p class="timeline-desc">Awarded for outstanding mobile photography composition, capturing raw storytelling elements and cinematic color grading in local Egyptian neighborhoods.</p>
+        </div>
+      </div>
+
+      <!-- Award 2 -->
+      <div class="timeline-item">
+        <div class="timeline-badge">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-title">3rd Place Championship</h3>
+            <span class="timeline-year">2024</span>
+          </div>
+          <span class="timeline-org">All Egyptian Universities Tournament</span>
+          <p class="timeline-desc">Recognized at the national level among university photography talents for a documentary photo-essay showcasing Egyptian cultural heritage and pottery craft preservation.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE GALLERY SECTION
+       ========================================================================== -->
+  <section id="gallery" class="gallery-section section-padding">
+    <div class="section-header" style="text-align: center;">
+      <span class="section-subtitle">Portfolio Grid</span>
+      <h2 class="section-title serif-title reveal-text">Captured Narratives</h2>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="gallery-filters">
+      <div class="filter-categories">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="architecture">Architecture</button>
+        <button class="filter-btn" data-category="street">Street</button>
+        <button class="filter-btn" data-category="portrait">Portrait</button>
+        <button class="filter-btn" data-category="culture">Culture</button>
+        <button class="filter-btn" data-category="events">Events</button>
+        <button class="filter-btn" data-category="travel">Travel</button>
+        <button class="filter-btn" data-category="videographics">Video Graphics</button>
+      </div>
+
+      <!-- Sub Filter for Travel (Governorates) - slides down when 'travel' is active -->
+      <div class="filter-sub-wrapper" id="subFilterWrapper">
+        <div class="filter-governorates">
+          <button class="sub-filter-btn active" data-gov="all">All Governorates</button>
+          <button class="sub-filter-btn" data-gov="alexandria">Alexandria (الإسكندرية)</button>
+          <button class="sub-filter-btn" data-gov="arish">Arish (العريش)</button>
+          <button class="sub-filter-btn" data-gov="suez_canal">Suez Canal (قناة السويس)</button>
+          <button class="sub-filter-btn" data-gov="grace_village">Grace Village (قرية جريس)</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photos Grid Container -->
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Grid items generated dynamically by JS from portfolio_data.js -->
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       COLOR GRADING DRAG SLIDER SECTION
+       ========================================================================== -->
+  <section id="grading" class="grading-section section-padding" style="background-color: var(--bg-secondary);">
+    <div class="grading-layout">
+      
+      <div class="grading-info">
+        <div class="section-header">
+          <span class="section-subtitle">Visual Precision</span>
+          <h2 class="section-title serif-title reveal-text">The Art of Color Grading</h2>
+        </div>
+        <p class="grading-desc">Color grading is the language of cinematic photography. It sets the emotional tone, defines the atmosphere, and guides the viewer's eye through light and shade. Every raw exposure is just a canvas; the grade is where the story truly comes to life.</p>
+        
+        <div class="grading-specs-list">
+          <div class="grading-spec-row">
+            <i class="fas fa-sliders-h"></i>
+            <span><strong>Cinematic Tones</strong>: Custom warm highlights and cold shadow balancing.</span>
+          </div>
+          <div class="grading-spec-row">
+            <i class="fas fa-bullseye"></i>
+            <span><strong>Atmospheric Contrast</strong>: Matte curves that preserve raw details and details in shadow elements.</span>
+          </div>
+          <div class="grading-spec-row">
+            <i class="fas fa-magic"></i>
+            <span><strong>Story-Driven Palette</strong>: Fine-tuned hues designed to match the local authentic colors of Egypt.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Before/After Slider Widget -->
+      <div class="slider-widget-container" id="sliderWidget">
+        <div class="slider-label label-raw">RAW Flat Capture</div>
+        <div class="slider-label label-graded">Cinematic Graded</div>
+        
+        <!-- Graded (Base) -->
+        <div class="slider-img graded" style="background-image: url('categorys/culture/photo_2025-05-09_16-32-55.jpg');"></div>
+        
+        <!-- RAW (Top / Clipped) -->
+        <div class="slider-img raw" style="background-image: url('categorys/culture/photo_2025-05-09_16-32-55.jpg');"></div>
+        
+        <!-- Center Handle -->
+        <div class="slider-drag-handle">
+          <i class="fas fa-arrows-alt-h"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BEHIND THE SCENES SECTION
+       ========================================================================== -->
+  <section id="bts" class="bts-section section-padding">
+    <div class="section-header" style="text-align: center;">
+      <span class="section-subtitle">On-Site Moments</span>
+      <h2 class="section-title serif-title reveal-text">Behind the Scenes</h2>
+    </div>
+
+    <!-- BTS dynamic items container -->
+    <div class="bts-grid" id="btsGrid">
+      <!-- Generated dynamically by app.js -->
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT ME SECTION
+       ========================================================================== -->
+  <section id="contact" class="contact-section section-padding" style="background-color: var(--bg-secondary);">
+    <div class="section-header" style="text-align: center; margin-bottom: 5rem;">
+      <span class="section-subtitle">Collaborate</span>
+      <h2 class="section-title serif-title reveal-text">Let’s Bring Stories to Life</h2>
+    </div>
+
+    <div class="contact-layout">
+      
+      <!-- Contact details -->
+      <div class="contact-info-left">
+        <p class="contact-desc">Whether documenting a fleeting street narrative, capturing wedding/event memories, or collaborating on cinematic visual projects, I am ready to bring a unique authentic vision. Get in touch directly or fill out the booking request form.</p>
+        
+        <div class="contact-channels">
+          
+          <!-- Email -->
+          <a href="mailto:ziiikoali@gmail.com" class="contact-channel-item">
+            <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+            <div class="channel-details">
+              <span class="channel-label">Email Me</span>
+              <span class="channel-value">ziiikoali@gmail.com</span>
+            </div>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+201017421158" class="contact-channel-item">
+            <div class="channel-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="channel-details">
+              <span class="channel-label">Call / WhatsApp</span>
+              <span class="channel-value">01017421158</span>
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/_zakaria_yahia_ph/" target="_blank" rel="noopener" class="contact-channel-item">
+            <div class="channel-icon"><i class="fab fa-instagram"></i></div>
+            <div class="channel-details">
+              <span class="channel-label">Instagram Feed</span>
+              <span class="channel-value">@_zakaria_yahia_ph</span>
+            </div>
+          </a>
+
+          <!-- Tiktok -->
+          <a href="https://www.tiktok.com/@ziko744" target="_blank" rel="noopener" class="contact-channel-item">
+            <div class="channel-icon"><i class="fab fa-tiktok"></i></div>
+            <div class="channel-details">
+              <span class="channel-label">TikTok Clips</span>
+              <span class="channel-value">@ziko744</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Booking Form -->
+      <div class="contact-form-card">
+        <form id="bookingForm" novalidate>
+          <div class="form-group-row">
+            <div class="form-field">
+              <label for="nameInput">Full Name *</label>
+              <input type="text" id="nameInput" class="form-input" placeholder="e.g. Aly Maher" required>
+            </div>
+            <div class="form-field">
+              <label for="emailInput">Email Address *</label>
+              <input type="email" id="emailInput" class="form-input" placeholder="e.g. name@domain.com" required>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-field">
+              <label for="phoneInput">Phone Number *</label>
+              <input type="tel" id="phoneInput" class="form-input" placeholder="e.g. 010XXXXXXXX" required>
+            </div>
+            <div class="form-field">
+              <label for="typeInput">Inquiry Type</label>
+              <select id="typeInput" class="form-input">
+                <option value="street">Street & Documentary Project</option>
+                <option value="portrait">Portrait Sessions</option>
+                <option value="event">Event Coverage</option>
+                <option value="travel">Travel Editorial</option>
+                <option value="color">Color Grading Consultation</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="messageInput">Project Concept / Details</label>
+            <textarea id="messageInput" class="form-input" placeholder="Describe the atmosphere, location, date, and any creative requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn">Send Booking Inquiry</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="footer-logo-title">Zakaria Yahia</span>
+      <span class="footer-logo-sub">Visual Storyteller & Photographer</span>
+    </div>
+    
+    <div class="footer-socials">
+      <a href="mailto:ziiikoali@gmail.com" class="footer-social-btn" aria-label="Email Address"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+201017421158" class="footer-social-btn" aria-label="Phone Number"><i class="fas fa-phone-alt"></i></a>
+      <a href="https://www.instagram.com/_zakaria_yahia_ph/" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ziko744" target="_blank" rel="noopener" class="footer-social-btn" aria-label="TikTok Profile"><i class="fab fa-tiktok"></i></a>
+    </div>
+    
+    <div class="footer-copyright">
+      <p>&copy; 2026 Zakaria Yahia. All rights reserved. Designed for Visual Excellence.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL LIGHTBOX
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightbox" role="dialog" aria-modal="true" aria-label="Fullscreen Gallery Viewer">
+    <button class="lightbox-close-btn" aria-label="Close Gallery Viewer"><i class="fas fa-times"></i></button>
+    
+    <button class="lightbox-nav-btn prev-btn" aria-label="Previous Media"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav-btn next-btn" aria-label="Next Media"><i class="fas fa-chevron-right"></i></button>
+    
+    <div class="lightbox-content">
+      <div class="lightbox-media-wrapper">
+        <img src="" alt="" class="lightbox-img">
+        <video src="" class="lightbox-video" controls loop muted playsinline></video>
+      </div>
+      
+      <div class="lightbox-details">
+        <div class="lightbox-info">
+          <h3 class="lightbox-title">Photo Title</h3>
+          <span class="lightbox-location">Alexandria, Egypt</span>
+        </div>
+        <!-- EXIF metadata removed as requested -->
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP CDNs with Fallback checks -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Project Scripts -->
+  <script src="portfolio_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
