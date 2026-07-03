@@ -50,6 +50,9 @@ body {
   font-family: 'Outfit', sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 /* Custom Scrollbar */
@@ -262,7 +265,7 @@ button, input, select, textarea {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -300px;
     width: 280px;
     height: 100vh;
     background: var(--bg-secondary);
@@ -1619,6 +1622,62 @@ textarea.form-input {
 /* Lightbox EXIF metadata styling removed */
 
 @media(max-width: 768px) {
+  /* Center Section Headers on Mobile */
+  .section-header {
+    text-align: center !important;
+    margin-bottom: 2.5rem;
+  }
+
+  /* About Section Centering */
+  .about-content-left {
+    text-align: center;
+    align-items: center;
+  }
+  .lang-switch {
+    justify-content: center;
+  }
+  .about-bio {
+    align-items: center;
+  }
+
+  /* Stack stats container vertically on all mobile/tablet viewports */
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Color Grading Centering */
+  .grading-info {
+    text-align: center;
+    align-items: center;
+  }
+  .grading-specs-list {
+    align-items: center;
+    width: 100%;
+  }
+  .grading-spec-row {
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  /* Contact Centering */
+  .contact-info-left {
+    text-align: center;
+    align-items: center;
+  }
+  .contact-channels {
+    align-items: center;
+    width: 100%;
+  }
+  .contact-channel-item {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  /* Lightbox Navigation & Details */
   .lightbox-nav-btn {
     width: 2.5rem;
     height: 2.5rem;
@@ -1635,11 +1694,10 @@ textarea.form-input {
     align-items: center;
     text-align: center;
   }
-  /* Exif media query removed */
   
   /* Responsive Section Padding */
   .section-padding {
-    padding: 60px 4% 50px;
+    padding: 60px 5% 50px;
   }
 
   /* Responsive Spotlight Size */
@@ -1664,12 +1722,6 @@ textarea.form-input {
 }
 
 @media(max-width: 480px) {
-  /* Stack stats container vertically on narrow screens */
-  .stats-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
   /* Prevent filter buttons from breaking layout */
   .filter-btn {
     padding: 0.45rem 0.9rem;
