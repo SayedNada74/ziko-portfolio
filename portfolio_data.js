@@ -53,19 +53,6 @@ const PORTFOLIO_DATA = {
   ],
   "photos": [
     {
-      "url": "categorys/portrait/1783081259674-997027743.jpg",
-      "category": "portrait",
-      "title": "ةن",
-      "location": "مىخ",
-      "exif": {
-        "gear": "",
-        "focal": "",
-        "aperture": "",
-        "shutter": "",
-        "iso": ""
-      }
-    },
-    {
       "url": "categorys/portrait/IMG_20241108_164315.jpg",
       "category": "portrait",
       "title": "Sufi Wisdom",

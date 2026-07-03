@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             card.innerHTML = `
                 <div class="h-48 w-full bg-gray-900 overflow-hidden relative">
-                    <img src="../${photo.url}" alt="${photo.title}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:opacity-60">
+                    <img src="/${photo.url}" alt="${photo.title}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:opacity-60">
                     <button class="delete-btn absolute top-3 right-3 w-8 h-8 bg-red-600/90 text-white rounded flex items-center justify-center opacity-0 group-hover:opacity-100 hover:bg-red-500 transition shadow-lg" data-url="${photo.url}" title="Delete Photo">
                         <i class="fa-solid fa-trash-can text-sm"></i>
                     </button>
