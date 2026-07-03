@@ -15,16 +15,15 @@ app.use('/admin', express.static(path.join(__dirname, 'admin')));
 // Serve the workspace statically to preview images
 app.use(express.static(__dirname));
 
-// Multer storage for uploaded images
+// Multer storage for uploaded images - Save temporarily first
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        const category = req.body.category || 'street';
-        // Ensure folder exists
-        const dir = path.join(__dirname, 'categorys', category);
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
+        // Save to a temporary location because req.body is not fully parsed yet
+        const tempDir = path.join(__dirname, 'categorys', 'temp');
+        if (!fs.existsSync(tempDir)) {
+            fs.mkdirSync(tempDir, { recursive: true });
         }
-        cb(null, dir);
+        cb(null, tempDir);
     },
     filename: (req, file, cb) => {
         const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
@@ -68,6 +67,8 @@ function savePortfolioData(data) {
 
 // Get current data
 app.get('/api/data', (req, res) => {
+    // Add cache control headers to prevent browser from caching the JSON
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, private');
     const data = getPortfolioData();
     if (data) {
         res.json(data);
@@ -86,7 +87,18 @@ app.post('/api/upload', upload.single('photo'), (req, res) => {
         const data = getPortfolioData();
         if (!data) return res.status(500).json({ error: "Cannot parse data" });
         
+        // Now req.body is fully parsed
         const category = req.body.category || 'street';
+        
+        // Create the final category directory
+        const finalDir = path.join(__dirname, 'categorys', category);
+        if (!fs.existsSync(finalDir)) {
+            fs.mkdirSync(finalDir, { recursive: true });
+        }
+        
+        // Move the file from temp to final directory
+        const finalPath = path.join(finalDir, req.file.filename);
+        fs.renameSync(req.file.path, finalPath);
         
         // Relative path for the front-end to use
         const relativeUrl = `categorys/${category}/${req.file.filename}`.replace(/\\/g, '/');
