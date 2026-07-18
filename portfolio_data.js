@@ -53,19 +53,6 @@ const PORTFOLIO_DATA = {
   ],
   "photos": [
     {
-      "url": "categorys/portrait/IMG_20241108_164315.jpg",
-      "category": "portrait",
-      "title": "Sufi Wisdom",
-      "location": "Cairo",
-      "exif": {
-        "gear": "Canon EOS",
-        "focal": "85mm",
-        "aperture": "f/1.8",
-        "shutter": "1/160s",
-        "iso": "200"
-      }
-    },
-    {
       "url": "categorys/portrait/IMG_20260425_112015.jpg",
       "category": "portrait",
       "title": "Soulful Eyes",
