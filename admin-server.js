@@ -58,7 +58,7 @@ function getPortfolioData() {
 function savePortfolioData(data) {
     const filePath = path.join(__dirname, 'portfolio_data.js');
     const header = `// Portfolio Content Database for Zakaria Yahia\n// This file structures all the images and metadata for the website.\n\nconst PORTFOLIO_DATA = `;
-    const footer = `\n\n// Exporting to make it available in the browser window\nwindow.PORTFOLIO_DATA = PORTFOLIO_DATA;\n`;
+    const footer = `\n\n// Exporting to make it available in both browser window and Node.js\nif (typeof window !== 'undefined') {\n  window.PORTFOLIO_DATA = PORTFOLIO_DATA;\n}\nif (typeof module !== 'undefined' && module.exports) {\n  module.exports = PORTFOLIO_DATA;\n}\n`;
     const jsonStr = JSON.stringify(data, null, 2);
     fs.writeFileSync(filePath, header + jsonStr + ';' + footer, 'utf8');
 }

@@ -903,8 +903,161 @@ const PORTFOLIO_DATA = {
       "title": "Chasing Shadows & Geometry",
       "description": "Waiting for the golden hour shadows to outline architectural symmety."
     }
+  ],
+  "gear": [
+    {
+      "category": "Camera Body",
+      "name": "Full-Frame Cinema & Still System",
+      "spec": "High Dynamic Range • 4K 10-Bit C-LOG • Fast Hybrid Dual-Pixel AF",
+      "icon": "fa-camera"
+    },
+    {
+      "category": "Primary Prime",
+      "name": "35mm f/1.4 Cine Prime",
+      "spec": "Documentary Storyteller • Razor Sharp Wide Aperture • Natural Perspective",
+      "icon": "fa-bullseye"
+    },
+    {
+      "category": "Portrait Master",
+      "name": "50mm & 85mm f/1.8 Bokeh Specialist",
+      "spec": "Cinematic Subject Separation • Creamy Bokeh • Ultra Low-Light Capability",
+      "icon": "fa-circle-dot"
+    },
+    {
+      "category": "Documentary Zoom",
+      "name": "24-70mm f/2.8 Constant Aperture",
+      "spec": "Versatile Expedition Workhorse • Weather-Sealed • Ultra Constant Resolving Power",
+      "icon": "fa-expand-arrows-alt"
+    },
+    {
+      "category": "Movement & Rig",
+      "name": "3-Axis Precision Gimbal & Cage",
+      "spec": "Fluid Dynamic Motion • Carbon Fiber Monopod • Anamorphic Matte Box",
+      "icon": "fa-video"
+    },
+    {
+      "category": "Grading Suite",
+      "name": "DaVinci Resolve Studio & Custom LUTs",
+      "spec": "Precise Color Science • Custom Emulsion Emulation • Film Grain Grading",
+      "icon": "fa-sliders-h"
+    }
+  ],
+  "expeditions": [
+    {
+      "id": "exp-alexandria",
+      "gov": "alexandria",
+      "category": "travel",
+      "title": "Alexandria Coast",
+      "titleAr": "عروس البحر الأبيض (الإسكندرية)",
+      "cover": "categorys/travel/photo_2025-05-09_16-20-29.jpg",
+      "tagline": "Mediterranean Nostalgia & Sea Mist",
+      "quote": "Where coastal salt blends with faded European balconies and timeless tramlines.",
+      "photoCount": 8
+    },
+    {
+      "id": "exp-grace",
+      "gov": "grace_village",
+      "category": "travel",
+      "title": "Grace Pottery Village",
+      "titleAr": "قرية جريس (صُناع الفخار)",
+      "cover": "categorys/travel/photo_2025-05-09_16-33-45.jpg",
+      "tagline": "A Millennium of Ancient Crafts",
+      "quote": "Earthy hands turning Nile mud into everlasting vessels amidst smoke and dawn.",
+      "photoCount": 14
+    },
+    {
+      "id": "exp-cairo",
+      "gov": "all",
+      "category": "street",
+      "title": "Historic Old Cairo",
+      "titleAr": "القاهرة الفاطمية والمعز",
+      "cover": "categorys/street/Go5kAWUWoAEFHTJ.jpg",
+      "tagline": "Sufi Shadows & Medieval Alleys",
+      "quote": "Golden lanterns casting long shadows across centuries-old cobblestones.",
+      "photoCount": 6
+    },
+    {
+      "id": "exp-suez",
+      "gov": "suez_canal",
+      "category": "travel",
+      "title": "Suez Canal & Arish",
+      "titleAr": "قناة السويس والعريش",
+      "cover": "categorys/travel/photo_2025-05-09_16-31-09.jpg",
+      "tagline": "Maritime Horizons & Sinai Frontiers",
+      "quote": "Documenting colossal ships and the serene golden dunes bordering the Red Sea.",
+      "photoCount": 10
+    }
+  ],
+  "gradingSamples": [
+    {
+      "id": "sample-1",
+      "title": "Grace Village Potter",
+      "category": "Culture / Documentary",
+      "url": "categorys/culture/photo_2025-05-09_16-32-55.jpg"
+    },
+    {
+      "id": "sample-2",
+      "title": "Alexandria Sea Horizon",
+      "category": "Travel / Coastal",
+      "url": "categorys/travel/photo_2025-05-09_16-20-29.jpg"
+    },
+    {
+      "id": "sample-3",
+      "title": "Al-Moez Midnight Walk",
+      "category": "Street / Heritage",
+      "url": "categorys/street/Go5kAWUWoAEFHTJ.jpg"
+    },
+    {
+      "id": "sample-4",
+      "title": "Sinai Modern Architecture",
+      "category": "Architecture / Geometry",
+      "url": "categorys/architecture/photo_2025-05-09_16-43-57.jpg"
+    }
+  ],
+  "gradingPresets": [
+    {
+      "id": "kodak-500t",
+      "name": "Kodak Vision3 500T",
+      "badge": "Warm Filmic",
+      "description": "Rich golden highlights, warm amber roll-off, cinematic contrast preserving shadow skin tones.",
+      "filterCss": "contrast(1.18) saturate(1.22) sepia(0.22) hue-rotate(-8deg) brightness(1.02)",
+      "highlights": "Warm Gold #f6c06a",
+      "shadows": "Deep Warm Navy #101626"
+    },
+    {
+      "id": "teal-orange",
+      "name": "Mediterranean Teal & Orange",
+      "badge": "Blockbuster Cine",
+      "description": "Cyan/teal oceanic shadows contrasted with luminous warm ochre sunlit highlights.",
+      "filterCss": "contrast(1.22) saturate(1.18) hue-rotate(18deg) brightness(0.98)",
+      "highlights": "Amber Orange #ff9800",
+      "shadows": "Cyan Teal #00838f"
+    },
+    {
+      "id": "leica-noir",
+      "name": "Leica Monochrome Tri-X",
+      "badge": "Timeless Noir",
+      "description": "Classic high-acutance silver halide black & white. Deep shadows and sculpted directional contrast.",
+      "filterCss": "grayscale(1) contrast(1.42) brightness(0.96)",
+      "highlights": "Pure Silver #f5f5f5",
+      "shadows": "Obsidian Black #050505"
+    },
+    {
+      "id": "vintage-portra",
+      "name": "Portra 400 Documentary",
+      "badge": "Natural Pastel",
+      "description": "Soft muted greens, warm earthy skin tones, smooth midtone gradations for authentic storytelling.",
+      "filterCss": "contrast(1.06) saturate(1.08) brightness(1.04) sepia(0.12)",
+      "highlights": "Soft Cream #fffae6",
+      "shadows": "Olive Charcoal #1e201c"
+    }
   ]
 };
 
-// Exporting to make it available in the browser window
-window.PORTFOLIO_DATA = PORTFOLIO_DATA;
+// Exporting to make it available in both browser window and Node.js
+if (typeof window !== 'undefined') {
+  window.PORTFOLIO_DATA = PORTFOLIO_DATA;
+}
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = PORTFOLIO_DATA;
+}
